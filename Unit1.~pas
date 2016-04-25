@@ -29,7 +29,8 @@ var
   Form1: TForm1;
   Ttime: integer;
   Sec_counter: integer;
-  customcmdtext: text;
+  customcmdtext: string;
+  cc: pchar;
 implementation
 
 {$R *.dfm}
@@ -55,8 +56,9 @@ begin
     end;
     If customcmd.Checked = True then
     begin
-       //customcmdtext := PAnsiChar(Edit2.Text);
-       //WinExec(customcmdtext,sw_hide);
+       customcmdtext := Edit2.Text;
+       cc := PChar(customcmdtext);
+       WinExec(cc, sw_hide);
     end;
   end;
 end;

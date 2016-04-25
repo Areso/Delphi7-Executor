@@ -3,7 +3,7 @@ object Form1: TForm1
   Top = 125
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsDialog
-  Caption = 'Delayed'
+  Caption = 'o'
   ClientHeight = 126
   ClientWidth = 413
   Color = clBtnFace
