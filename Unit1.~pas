@@ -16,6 +16,13 @@ type
     shutdown: TRadioButton;
     customcmd: TRadioButton;
     Edit2: TEdit;
+    GroupBox1: TGroupBox;
+    Edit3: TEdit;
+    CheckBox1: TCheckBox;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    CheckBox2: TCheckBox;
+    CheckBox3: TCheckBox;
     procedure Button1Click(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -48,11 +55,11 @@ begin
   begin
     If restart.Checked = True then
     begin
-       WinExec('shutdown /r /t 0',sw_hide);
+       WinExec('shutdown /r /f /t 0',sw_hide);
     end;
     If shutdown.Checked = True then
     begin
-       WinExec('shutdown /s /t 0',sw_hide);
+       WinExec('shutdown /s /f /t 0',sw_hide);
     end;
     If customcmd.Checked = True then
     begin
